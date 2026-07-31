@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <div id="lockScreen" class="screen active">
+    <div class="card">
+      <h1>❤️ A Surprise For You ❤️</h1>
+      <p>Enter our special date</p>
+      <input type="password" id="password" placeholder="Example: My Future" />
+      <button onclick="unlock()">Open</button>
+      <p id="error"></p>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <div id="mainSite" class="hidden">
+
+    <!-- FLOATING HEARTS -->
+    <div class="hearts"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="typewriter">Happy Girlfriend Day ❤️</h1>
+      <p>To the most special person in my life</p>
+
+      <!-- Replace with her photo -->
+      <img src="/Users/vijay/Desktop/Screenshot 2026-07-31 at 10.21.23 PM.png" alt="Her Photo" class="hero-img">
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section">
+      <h2>Our Story 💕</h2>
+      <div class="glass">
+        <p>
+          Hey Megana 💕,
+
+I don't even know how to put everything into words, but I'll try. Before you came into my life, I never thought someone could become this important to me. You slowly became the person I look forward to talking to every day, the one who makes me smile without even trying.
+
+I still smile when I think about all our random conversations, the silly jokes, the late-night talks, and even the small moments that probably don't seem like much to anyone else. To me, those moments mean everything because they were with you.
+
+You make my bad days feel better, and my good days even happier. Being with you feels comfortable, peaceful, and real. I honestly feel lucky that I get to call you mine.
+
+Thank you for being patient with me, supporting me, making me laugh, and just being yourself. I wouldn't change a single thing about our journey because every moment has brought us closer.
+
+I know we're going to have so many more memories together, and I can't wait to make every single one of them with you.
+
+<p>Happy Girlfriend Day, </p>
+I love you more than you'll ever know😘.
+        </p>
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="section">
+      <h2>Why I Love You 🫶</h2>
+      <div class="cards">
+        <div class="reason">😊 Your smile</div>
+        <div class="reason">🌺My day feels incomplete if I don't talk to you.</div>
+         <div class="reason">😂 I love our random conversations and silly jokes.</div>
+         <div class="reason">🌹 I love the little things you do without even realizing it.</div>
+        <div class="reason">🌸 Your kindness</div>
+        <div class="reason">✨ Your beautiful heart</div>
+        <div class="reason">💖 The happiness you bring me</div>
+        <div class="reason">🌙 The way you stay on my mind all day</div>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="section">
+      <h2>Open My Letter 💌</h2>
+      <button class="love-btn" onclick="toggleLetter()">Read Letter</button>
+
+      <div id="letter" class="letter hidden">
+        
+
+    <p><strong>Hey Megana ❤️,</strong></p>
+
+    <p>
+        If you're reading this, it means you opened the little surprise I made just for you.
+        I know it isn't something expensive or perfect, but I wanted to make something
+        with my own hands because you deserve something that's truly from me.
+    </p>
+
+    <p>
+        I honestly don't know how you managed to become such an important part of my life.
+        It happened so naturally that I didn't even realize it at first. Now you're the
+        first person I think about when I wake up and the last person I think about before I sleep.
+    </p>
+
+    <p>
+        You've made me smile on days when I didn't even feel like smiling. Even a simple
+        "How was your day?" from you somehow makes everything feel lighter.
+    </p>
+
+    <p>
+        I love all the little things about you. The way you laugh, the way you care,
+        the random things you say, and even the little habits that make you... you.
+    </p>
+
+    <p>
+        Thank you for always being there for me. Thank you for believing in me,
+        supporting me, and making my life so much happier.
+    </p>
+
+    <p>
+        Happy Girlfriend Day, my love. ❤️
+    </p>
+
+    <p><strong>Forever yours,<br>Vijay ❤️</strong></p>
+
+
+      </div>
+    </section>
+
+    <!-- SLIDESHOW -->
+<section class="section">
+
+    <h2>Our Moments 📸</h2>
+
+    <div class="slideshow">
+
+        <img id="slide" 
+        src="/Users/vijay/Desktop/Screenshot 2026-08-01 at 12.05.01 AM.png" 
+        alt="Memory">
+
+    </div>
+
+</section>
+
+    <!-- LOVE METER -->
+    <section class="section">
+      <h2>Love Meter 💘</h2>
+      <div class="meter">
+        <div id="meterFill"></div>
+      </div>
+      <button class="love-btn" onclick="fillMeter()">Check Love</button>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="section final">
+      <h2>Final Surprise ✨</h2>
+      <button class="love-btn" onclick="showSurprise()">I Love You Megana ❤️</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

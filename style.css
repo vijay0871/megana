@@ -1,0 +1,260 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#800020 0%,#FDF8F5 100%);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* SCREENS */
+.screen{
+  position:fixed;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#800020,#4b0012);
+  z-index:100;
+}
+
+.hidden{
+  display:none;
+}
+
+.card{
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(12px);
+  padding:40px;
+  border-radius:24px;
+  text-align:center;
+  width:90%;
+  max-width:400px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+.card h1{
+  font-family:'Great Vibes',cursive;
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.card input{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border:none;
+  border-radius:12px;
+  outline:none;
+  font-size:1rem;
+}
+
+.card button{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:#F7C8D0;
+  color:#800020;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1{
+  font-family:'Great Vibes',cursive;
+  font-size:4rem;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  margin-bottom:20px;
+}
+
+.hero-img{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid rgba(255,255,255,0.7);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.section h2{
+  font-family:'Great Vibes',cursive;
+  font-size:3rem;
+  margin-bottom:30px;
+}
+
+.glass{
+  max-width:700px;
+  margin:auto;
+  padding:30px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(10px);
+}
+
+/* REASON CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.reason{
+  padding:24px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(10px);
+  transition:transform .3s ease;
+}
+
+.reason:hover{
+  transform:translateY(-6px);
+}
+
+/* LETTER */
+.love-btn{
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+  background:#F7C8D0;
+  color:#800020;
+  font-size:1rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
+
+.love-btn:hover{
+  transform:scale(1.05);
+}
+
+.letter{
+  max-width:700px;
+  margin:25px auto 0;
+  padding:28px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(10px);
+  text-align:left;
+  line-height:1.8;
+}
+
+/* SLIDESHOW */
+.slideshow{
+  max-width:600px;
+  margin:auto;
+}
+
+.slideshow img{
+  width:100%;
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* LOVE METER */
+.meter{
+  width:300px;
+  height:22px;
+  margin:20px auto;
+  background:rgba(255,255,255,0.25);
+  border-radius:20px;
+  overflow:hidden;
+}
+
+#meterFill{
+  height:100%;
+  width:0%;
+  background:#ff4d6d;
+  transition:width 2s ease;
+}
+
+/* FINAL */
+.final{
+  padding-bottom:120px;
+}
+
+/* FLOATING HEARTS */
+.hearts::before,
+.hearts::after{
+  content:'❤️ ❤️ ❤️ ❤️ ❤️';
+  position:fixed;
+  left:-10%;
+  width:120%;
+  font-size:2rem;
+  opacity:0.15;
+  animation:float 18s linear infinite;
+}
+
+.hearts::after{
+  top:55%;
+  animation-duration:22s;
+}
+
+@keyframes float{
+  from{
+    transform:translateY(100vh);
+  }
+  to{
+    transform:translateY(-120vh);
+  }
+}
+
+/* TYPEWRITER */
+.typewriter{
+  overflow:hidden;
+  white-space:nowrap;
+  border-right:3px solid #fff;
+  width:0;
+  animation:typing 3s steps(30,end) forwards,blink .8s infinite;
+}
+
+@keyframes typing{
+  from{width:0}
+  to{width:100%}
+}
+
+@keyframes blink{
+  50%{border-color:transparent}
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:3rem;
+  }
+
+  .section h2{
+    font-size:2.4rem;
+  }
+
+  .hero-img{
+    width:180px;
+    height:180px;
+  }
+}
